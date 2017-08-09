@@ -1,5 +1,11 @@
 
-jobs:    
+jobs:   
+  - name: runtesting1
+    type: manifest
+    allowPublicAccess: false
+    steps:
+      - IN: imagetest1 
+      
   - name: runtesting1
     type: runSh
     steps:

@@ -1,0 +1,24 @@
+
+resources:
+  - name: imagetest1
+    type: image
+    integration: ship4-docker
+    pointer:
+      sourceName: "shiphitchcock4/hitchcock4_sample_nodenew"
+    seed:
+      versionName: "latest"
+      
+  - name: gitrepotest1
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: shiphitchcock24/sample-script
+      branch: master
+      
+  - name: imagetest2
+    type: image
+    integration: ship4-docker
+    pointer:
+      sourceName: "shiphitchcock4/hitchcock4_sample_nodenew"
+    seed:
+      versionName: "latest"

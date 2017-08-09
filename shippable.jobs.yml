@@ -5,8 +5,8 @@ jobs:
     steps:
       - IN: imagetest1
       - IN: gitrepotest1
-      - IN: gr1
-      - IN: sample-publicchangename
+   #   - IN: gr1
+    #  - IN: sample-publicchangename
       - TASK:
          - script: ./IN/gitrepotest1/gitRepo/echo.sh
          - script: echo 'api'

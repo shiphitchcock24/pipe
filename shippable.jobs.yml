@@ -1,0 +1,25 @@
+
+jobs:    
+  - name: runtest1
+    type: runSh
+    steps:
+      - IN: imagetest1
+      - IN: gitrepotest1
+      - IN: gr1
+      - IN: sample-publicchangename
+      - TASK:
+         - script: ./IN/gitrepotest1/gitRepo/echo.sh
+         - script: echo 'api'
+         - script: echo 'test'
+         #- script: ./IN/script/gitRepo/echo.sh
+         - script: pwd
+
+  - name: runtest2
+    type: runSh
+    steps:
+      - IN: imagetest2
+     # - IN: keyvalue
+      - IN: gitrepotest1
+      - TASK:
+         - script: ./IN/gitrepotest1/gitRepo/echo.sh
+         - script: echo 'api'

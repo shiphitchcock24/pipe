@@ -1,6 +1,6 @@
 
 jobs:    
-  - name: runtest1
+  - name: runtesting1
     type: runSh
     steps:
       - IN: imagetest1
@@ -14,7 +14,7 @@ jobs:
          #- script: ./IN/script/gitRepo/echo.sh
          - script: pwd
 
-  - name: runtest2
+  - name: runtesting2
     type: runSh
     steps:
       - IN: imagetest2

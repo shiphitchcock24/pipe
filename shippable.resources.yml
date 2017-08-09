@@ -8,7 +8,7 @@ resources:
     seed:
       versionName: "latest"
       
-  - name: imagetest1
+  - name: gitrepotest1
     type: gitRepo
     integration: github
     pointer:
